@@ -56,9 +56,9 @@ Output:
 
 Two datasets were outputted by the script:
 
-First datasets is <output>_Viral_Reads_1.fq and <output>_Viral_Reads_2.fq, which are the reads with lambda values larger than threshold.
+First datasets is output_Viral_Reads_1.fq and output_Viral_Reads_2.fq, which are the reads with lambda values larger than threshold.
   
-Second dataset is <output>_lambda.txt, which is the lambda values for each paired-end reads.
+Second dataset is output_lambda.txt, which is the lambda values for each paired-end reads.
 
 (2) Calculation of the likelihood for assembled contigs.
 
@@ -82,6 +82,6 @@ Output:
 
 Two datasets were outputted by the script:
 
-First datasets is <output>_Viral.fna, which is the reads with lambda values larger than threshold.
+First datasets is output_Viral.fna, which is the reads with lambda values larger than threshold.
 
-Second dataset is <output>_lambda.txt, which is the lambda values for each contigs.
+Second dataset is output_lambda.txt, which is the lambda values for each contigs.
