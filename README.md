@@ -76,7 +76,7 @@ threshold:  The lambda threshold. The contigs with lambda values larger than thr
 
 The following example which uses the test data is:
 
-> python VirMC_contigs_1.1.py ./test_data/assembled_contigs.fna ./test_data/ assembled_contigs 1.01
+> python VirMC_contigs_1.1.py ./test_data/assembled_contigs.fna ./test_data/assembled_contigs 1.01
 
 Output:
 
