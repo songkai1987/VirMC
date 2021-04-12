@@ -3,40 +3,40 @@ predicting the viral sequences from metagenomic samples
 
 VirMC: a package for predicting the viral sequences from metagenomic samples or assembled metagenomic contigs
 
-Version: 1.1
+# Version: 1.1
 
 Authors: Kai Song
 
 Maintainer: Kai Song ksong@qdu.edu.cn
 
-Description
+# Description
 
 The package provides functions to calculate the likelihoods of the reads or contigs belong to viral genomes based on a Markov Model.
 
-Dependencies
+# Dependencies
 
 The python (>=2.7) are needed for the VirMC execution.
 
-Installation
+# Installation
 
 To quick start, first download the package file VirMC.tar.bz2 according to your operating system.
 
 For Linux user, you can install the package from the command line. Simply type the following to the command line,
 
-$ tar jxvf VirMC.tar.bz2
+> tar jxvf VirMC.tar.bz2
 
-Usage
+# Usage
 
 (1) Calculation of the likelihood for paired-end NGS data.
 
 As an example, the package provides two testing data sets containing 10,000 paired-end metagenomic reads in the directory of “/test_data/”.
 First, you should set this directory of “VirMC” as the current directory by:
 
-$ cd VirMC
+> cd VirMC
 
 The usage is:
 
-$ python VirMC_paired-end_1.1.py input1 input2 output threshold
+> python VirMC_paired-end_1.1.py input1 input2 output threshold
 
 Arguments:
 
@@ -50,7 +50,7 @@ threshold:  The lambda threshold. The reads with lambda values larger than thres
 
 The following example which uses the test data is:
 
-$ python VirMC_paired-end_1.1.py ./test_data/test_sample_1.fq ./test_data/test_sample_2.fq ./test_sample 1.01
+> python VirMC_paired-end_1.1.py ./test_data/test_sample_1.fq ./test_data/test_sample_2.fq ./test_sample 1.01
 
 Output:
 
@@ -64,7 +64,7 @@ Second dataset is <output>_lambda.txt, which is the lambda values for each paire
 
 The test data set of assembled contigs was also in the directory of “/test_data/”. The assembled contigs should be put in the files with fasta format. One can use the package of VirMC_contigs_1.1.py as follows:
 
-$ python VirMC_contigs_1.1.py input output threshold
+> python VirMC_contigs_1.1.py input output threshold
 
 Arguments:
 
@@ -76,7 +76,7 @@ threshold:  The lambda threshold. The contigs with lambda values larger than thr
 
 The following example which uses the test data is:
 
-$ python VirMC_contigs_1.1.py ./test_data/assembled_contigs.fna ./test_data/ assembled_contigs 1.01
+> python VirMC_contigs_1.1.py ./test_data/assembled_contigs.fna ./test_data/ assembled_contigs 1.01
 
 Output:
 
